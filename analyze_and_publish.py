@@ -40,7 +40,7 @@ REQUIREMENTS:
         print("Sending chat request with attached file to Gemini API...")
 
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.5-flash-lite",
             contents=[
                 uploaded_file, 
                 "Please analyze the attached raw Discord chat export JSON file."
