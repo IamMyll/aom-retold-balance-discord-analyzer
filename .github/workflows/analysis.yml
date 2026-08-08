@@ -2,7 +2,7 @@ name: Discord Chat Analysis
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 */2 * *'
   workflow_dispatch: 
 
 jobs:
@@ -28,14 +28,14 @@ jobs:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
         run: |
-          docker run --rm -v ${{ github.workspace }}:/out tyrrrz/discordchatexporter export -t "$DISCORD_TOKEN" -c "$CHANNEL_ID" -f Json --after "$(date -d "30 days ago" +'%Y-%m-%d')" -o /out/chat_export.json
+          docker run --rm -v ${{ github.workspace }}:/out tyrrrz/discordchatexporter export -t "$DISCORD_TOKEN" -c "$CHANNEL_ID" -f Json --after "2026-08-04 00:00" -o /out/chat_export.json
 
       - name: Fix Workspace Permissions
         run: sudo chown -R $USER:$USER ${{ github.workspace }}
 
       - name: Run AI Analysis
         env:
-          XAI_API_KEY: ${{ secrets.XAI_API_KEY }} 
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} 
         run: python analyze_and_publish.py chat_export.json
 
       - name: Commit and Push New Report
