@@ -1,8 +1,8 @@
 import sys
-import json
 import os
 from datetime import datetime, timezone, timedelta
-from openai import OpenAI
+from xai_sdk import Client
+from xai_sdk.chat import system, user
 
 def main():
     if len(sys.argv) < 2:
@@ -15,26 +15,20 @@ def main():
         print(f"File {file_path} not found. Exiting cleanly.")
         sys.exit(0)
 
-    client = OpenAI(
-        base_url="https://api.x.ai/v1",
-        api_key=os.environ.get("XAI_API_KEY"),
-    )
+    # Initialize native xAI client (uses XAI_API_KEY environment variable)
+    client = Client()
 
-    # Upload the JSON file to the xAI files API
-    with open(file_path, "rb") as file_data:
-        uploaded_file = client.files.create(
-            file=file_data,
-            purpose="agents"  # Required for agentic file tool calling
-        )
+    print(f"Uploading {file_path} to xAI Files API...")
+    # Upload the JSON file to xAI's file storage
+    uploaded_file = client.files.upload(file_path)
+    file_id = uploaded_file.id
+    print(f"File uploaded successfully. Assigned File ID: {file_id}")
 
-    # Convert the runner's UTC time to EDT for the display stamp
     utc_now = datetime.now(timezone.utc)
     edt_now = utc_now - timedelta(hours=4)
     last_updated_str = edt_now.strftime("%B %d, %Y at %I:%M %p EDT")
 
-    # The dynamic frontmatter is removed from the system prompt 
-    # to ensure Grok focuses strictly on the data analysis
-    system_prompt = f"""
+    system_prompt_text = """
 You are a community manager analyzing a Discord chat log for Age of Mythology: Retold. 
 Review the uploaded chat log in JSON format and produce a markdown-formatted report.
 
@@ -45,20 +39,33 @@ REQUIREMENTS:
 4. Format the output with specific headings: `### Insights into Game Balance` and `### Recommended Balance Changes`.
 """
 
-    print("Sending data to Grok API...")
-    
-    response = client.chat.completions.create(
-        model="grok-4.5",
-        messages=[
-            {"role": "system", "content": system_prompt}
-        ],
-        file_ids=[uploaded_file.id],
-        temperature=0.2
-    )
+    try:
+        print("Sending chat request referencing file_id to xAI API...")
 
-    llm_output = response.choices[0].message.content
+        # Initialize chat with system instructions
+        chat = client.chat.create(
+            model="grok-4.5",
+            messages=[system(system_prompt_text)]
+        )
+        
+        # Attach the uploaded file ID to the user prompt message
+        chat.append(user(
+            "Please analyze the attached raw Discord chat export JSON file.", 
+            file_ids=[file_id]
+        ))
+        
+        # Sample response from model
+        response = chat.sample()
+        llm_output = response.content
 
-    # Construct the final markdown document programmatically
+    finally:
+        # Clean up remote file storage after completion
+        print(f"Cleaning up remote file {file_id} from xAI storage...")
+        try:
+            client.files.delete(file_id)
+        except Exception as e:
+            print(f"Warning: Failed to delete remote file {file_id}: {e}")
+
     final_document = f"""---
 layout: page
 title: "Latest Balance Report"
@@ -72,7 +79,6 @@ permalink: /
 {llm_output}
 """
     
-    # Overwrite the root index.md file
     out_filename = "index.md"
     with open(out_filename, "w", encoding="utf-8") as f:
         f.write(final_document)
