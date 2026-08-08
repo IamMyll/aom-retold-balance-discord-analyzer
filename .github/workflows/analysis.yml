@@ -28,7 +28,7 @@ jobs:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
         run: |
-          docker run --rm -v ${{ github.workspace }}:/out tyrrrz/discordchatexporter export -t "$DISCORD_TOKEN" -c "$CHANNEL_ID" -f Json --after "$(date -d "30 days ago" +'%Y-%m-%d')" -o /out/chat_export.json
+          docker run --rm -v ${{ github.workspace }}:/out tyrrrz/discordchatexporter export -t "$DISCORD_TOKEN" -c "$CHANNEL_ID" -f Json --after "$(date -d "14 days ago" +'%Y-%m-%d')" -o /out/chat_export.json
 
       - name: Fix Workspace Permissions
         run: sudo chown -R $USER:$USER ${{ github.workspace }}
