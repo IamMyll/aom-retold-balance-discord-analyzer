@@ -15,24 +15,17 @@ def main():
         print(f"File {file_path} not found. Exiting cleanly.")
         sys.exit(0)
 
-    with open(file_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    messages = data.get("messages", [])
-    if not messages:
-        print("No messages found in the export. Exiting cleanly.")
-        sys.exit(0)
-
-    chat_log = ""
-    for msg in messages:
-        author = msg.get("author", {}).get("name", "Unknown")
-        content = msg.get("content", "")
-        chat_log += f"[{author}]: {content}\n"
-
     client = OpenAI(
         base_url="https://api.x.ai/v1",
         api_key=os.environ.get("XAI_API_KEY"),
     )
+
+    # Upload the JSON file to the xAI files API
+    with open(file_path, "rb") as file_data:
+        uploaded_file = client.files.create(
+            file=file_data,
+            purpose="agents"  # Required for agentic file tool calling
+        )
 
     # Convert the runner's UTC time to EDT for the display stamp
     utc_now = datetime.now(timezone.utc)
@@ -43,7 +36,7 @@ def main():
     # to ensure Grok focuses strictly on the data analysis
     system_prompt = f"""
 You are a community manager analyzing a Discord chat log for Age of Mythology: Retold. 
-Review the following chat log and produce a markdown-formatted report.
+Review the uploaded chat log and produce a markdown-formatted report.
 
 REQUIREMENTS:
 1. Extract the key insights regarding game balance.
@@ -60,6 +53,7 @@ REQUIREMENTS:
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": f"CHAT LOG:\n{chat_log}"}
         ],
+        file_ids=[uploaded_file.id],
         temperature=0.2
     )
 
