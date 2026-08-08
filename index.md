@@ -4,29 +4,20 @@ title: "Latest Balance Report"
 permalink: /
 ---
 
-**Last Updated:** August 08, 2026 at 11:11 AM EDT
+**Last Updated:** August 08, 2026 at 11:18 AM EDT
 
 ---
 
 ### Insights into Game Balance
 
-* **Aztec and Myth Unit Power Budget:** 
-  Players discussed the overarching design philosophy of the game, with **Smoke** and **Illuminatio imperii** noting that balancing asymmetry requires looking at the combined power budget of major and minor gods rather than isolated 1v1 unit comparisons. However, concerns were raised regarding specific Aztec elements: **GoodGameEveryone** highlighted that Aztec mechanics such as the `Ayohtli` technology and high-value warrior priest stats can feel overtuned. **Illuminatio imperii** also pointed out that Aztec favor generation lacks sufficient late-game restrictions and that the Armadillo's ability to displace heroes (even titans) disrupts standard mechanics.
-
-* **High-End Mythical Units & Area-of-Effect (AoE) Raiding:** 
-  Flying myth units with high-range ranged attacks and AoE abilities—specifically the Chinese *Qinglong* and Japanese *Raiju*—drew significant criticism. **Ironhide** and **Teddabear** argued that their range (reaching up to 12) combined with high-damage special abilities allows them to obliterate groups of villagers instantly before players can effectively react or position defenses. **Ironhide** suggested introducing damage multipliers against villagers for special abilities to curb oppressive raiding without breaking core anti-military combat stats.
-
-* **Egyptian Faction Economy and Priest Dependency:** 
-  The community debated the state of the Egyptian faction, generally agreeing they currently lean on the weaker side compared to other options. **Boit** and **Rank Donator** analyzed the Egyptian *Priest*, noting that the unit carries too much of the faction's power budget—serving simultaneously as a scout, a healer, and the primary anti-myth unit. Because players are forced to mass roughly 5+ priests regardless of whether opponents field myth units, it creates an inflexible gold sink. **Kido19** and **Avely** proposed adjustments such as shifting some priest resource costs to wood or changing population requirements to make them less penalizing to build defensively.
-
-* **The Centaur Debate and General Matchup Frustrations:** 
-  Classic Greek *Centaurs* remain a controversial topic. While players like **boit** defend them as a well-designed tool that rewards proactive play, community members like **Bambam** and **GoodGameEveryone** argued that their low-risk ranged burst capability disproportionately punishes non-cavalry factions, keeping frustration high on the ladder.
-
----
+* **Aztec Favour Generation and Mythic Abilities:** Players noted that Aztec resource generation can scale up efficiently to around 1800 military resources by the 7-minute mark. However, **Illuminatio imperii** highlighted that Aztec favor-burst generation can feel excessively strong in the late game, enabling players to clean out 10-20 villagers at once without a cooldown. Furthermore, **Illuminatio imperii** pointed out that the Armadillo's ability to push heroes is an outlier, as even Titan units lack this functionality.
+* **Qinglong and High-Tier Myth Unit Balance:** **RecoN**, **BigStimulus**, and **.teddabear** heavily discussed the dominance of Qinglongs, noting their excessive range (12 tiles), high hit points (720 HP), pierce armor, and powerful AoE abilities that trivialize raiding and defense. **Ironhide** also expressed frustration with Raiju units, noting that their high speed and simultaneous manual special abilities can wipe out groups of villagers instantly before notification sounds can trigger, which **boit** acknowledged as a quirk related to how units are launched into the air.
+* **Egyptian Civ and Priest Balance:** **boit**, **kido19**, **korsar_sfx**, and **Ironhide** debated the power budget of Egyptian Priests. **boit** argued that Priests combine scouting, healing, and anti-Myth Unit utility into a single package, forcing players to mass ~5+ of them regardless of whether myth units are present. **kido19** and **idc** suggested adjusting their costs or giving them wood requirements, while **boit** suggested shifting some healing power to the Pharaoh to free up the Priest's primary identity.
+* **General Meta and Matchup Frustrations:** Discussions regarding matchup difficulty often prompted the community's recurring philosophy—championed by **boit** and echoed by **hon3ynuts**, **Teddabear**, and **Icarus**—that losses typically stem from personal misplays and execution errors rather than strict game imbalance ("the answer lies inward"). Despite this, players like **GoodGameEveryone** continued to voice frustrations regarding steep matchup disparities, such as cavalry and specific mobile units out-trading counters.
 
 ### Recommended Balance Changes
 
-* **Qinglong & Raiju Adjustment:** Introduce a specialized multiplier (e.g., significantly reduced damage coefficients) on the area-of-effect special abilities of flying myth units when targeting villagers to prevent instant economic wipeouts from off-screen or un-notified raids. Additionally, evaluate reducing the base range of elite flying units like the *Qinglong* and *Onmoraki*.
-* **Egyptian Priest Rework:** Reduce the heavy gold dependency of the Egyptian *Priest* by redistributing its utility or introducing a mixed-resource cost (incorporating wood alongside gold) to alleviate the faction's early-to-mid-game resource bottlenecks. 
-* **Armadillo & Aztec Mechanics Tweaks:** Prevent the Armadillo's special ability from displacing heroic/mythic-tier units and heroes. Review the favor generation and upgrade scaling of late-game Aztec mechanics to limit instant mass-buff capability.
-* **Greek Centaur Tuning:** Further evaluate the balance of early Greek ranged myth pressure to ensure non-cavalry focused factions possess reliable, accessible counterplay options against early-game volume.
+1. **Qinglong Adjustments:** Reduce the base range of Qinglongs from 12 tiles down to a more balanced range (aligning closer to standard flying myth units like Phoenix) and scale down their baseline AoE damage against villagers and low-health entities.
+2. **Armadillo Special Ability Fix:** Remove the ability for Armadillos to push and displace hero units with their special attack, ensuring they adhere to the same anti-hero interaction rules as Titan units.
+3. **Egyptian Priest Restructuring:** Reallocate the power budget of Egyptian Priests by reducing their baseline healing capabilities and slightly shifting those healing metrics onto the Pharaoh. Alternatively, evaluate adjusting their cost dependencies or pop counts so they are less mandatory as a default multi-purpose investment when no myth units are present.
+4. **Raiju Special Ability Interaction:** Address the bug or behavior where multiple Raiju units can trigger their special abilities simultaneously on the same target while air-born/launched, preventing unavoidable instant-kill spikes on economy units.
