@@ -36,7 +36,7 @@ def main():
     # to ensure Grok focuses strictly on the data analysis
     system_prompt = f"""
 You are a community manager analyzing a Discord chat log for Age of Mythology: Retold. 
-Review the uploaded chat log and produce a markdown-formatted report.
+Review the uploaded chat log in JSON format and produce a markdown-formatted report.
 
 REQUIREMENTS:
 1. Extract the key insights regarding game balance.
@@ -50,8 +50,7 @@ REQUIREMENTS:
     response = client.chat.completions.create(
         model="grok-4.5",
         messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": f"CHAT LOG:\n{chat_log}"}
+            {"role": "system", "content": system_prompt}
         ],
         file_ids=[uploaded_file.id],
         temperature=0.2
