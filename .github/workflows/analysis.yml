@@ -1,0 +1,53 @@
+name: Discord Chat Analysis
+
+on:
+  schedule:
+    # Run at 00:00 UTC and 12:00 UTC every day
+    - cron: '0 */12 * * *'
+  workflow_dispatch: 
+
+jobs:
+  extract_and_publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write 
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install DiscordChatExporter CLI
+        run: dotnet tool install --global DiscordChatExporter.Cli
+
+      - name: Calculate Date and Export Discord Logs
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+        run: |
+          AFTER_DATE=2026-06-25 00:00
+          echo "The last AoM Retold balance patch was released on 2026-06-23. Fetching all chat since: $AFTER_DATE"
+          ~/.dotnet/tools/discordchatexporter-cli export -t "$DISCORD_TOKEN" -c "$CHANNEL_ID" -f Json --after "$AFTER_DATE" -o chat_export.json
+
+      - name: Run AI Analysis
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }} 
+        run: python analyze_and_publish.py chat_export.json
+
+      - name: Commit and Push New Report
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Stage the specific file
+          git add index.md
+          
+          # Commit only if there are changes
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update latest balance report" && git push)
