@@ -1,1 +1,1 @@
-xai-sdk
+google-genai
