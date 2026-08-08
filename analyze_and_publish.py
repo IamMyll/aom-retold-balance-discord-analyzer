@@ -2,7 +2,7 @@ import sys
 import os
 from datetime import datetime, timezone, timedelta
 from xai_sdk import Client
-from xai_sdk.chat import system
+from xai_sdk.chat import system, user, file
 
 def main():
     if len(sys.argv) < 2:
@@ -46,17 +46,17 @@ REQUIREMENTS:
             messages=[system(system_prompt_text)]
         )
         
-        # Pass a raw dictionary to chat.append to include file_ids
-        chat.append({
-            "role": "user",
-            "content": "Analyze the attached raw Discord chat export JSON file.",
-            "file_ids": [file_id]
-        })
+        # Attach the uploaded file using the file() helper inside user()
+        chat.append(user(
+            "Analyze the attached raw Discord chat export JSON file.",
+            file(file_id)
+        ))
         
         response = chat.sample()
         llm_output = response.content
 
     finally:
+        # Clean up remote file storage after completion
         print(f"Cleaning up remote file {file_id} from xAI storage...")
         try:
             client.files.delete(file_id)
