@@ -2,7 +2,7 @@ name: Discord Chat Analysis
 
 on:
   schedule:
-    - cron: '0 */12 * * *'
+    - cron: '0 0 * * *'
   workflow_dispatch: 
 
 jobs:
@@ -28,8 +28,7 @@ jobs:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
         run: |
-          # Run the official Docker container and mount the workspace to output the file
-          docker run --rm -v ${{ github.workspace }}:/out tyrrrz/discordchatexporter export -t "$DISCORD_TOKEN" -c "$CHANNEL_ID" -f Json --after "2026-08-04 00:00" -o /out/chat_export.json
+          docker run --rm -v ${{ github.workspace }}:/out tyrrrz/discordchatexporter export -t "$DISCORD_TOKEN" -c "$CHANNEL_ID" -f Json --after "$(date -d "30 days ago" +'%Y-%m-%d')" -o /out/chat_export.json
 
       - name: Fix Workspace Permissions
         run: sudo chown -R $USER:$USER ${{ github.workspace }}
@@ -44,8 +43,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Stage the specific file
           git add index.md
           
-          # Commit only if there are changes
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update latest balance report" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update 30-day balance report" && git push)
