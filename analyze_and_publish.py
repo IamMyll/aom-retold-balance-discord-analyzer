@@ -2,7 +2,7 @@ import sys
 import os
 from datetime import datetime, timezone, timedelta
 from xai_sdk import Client
-from xai_sdk.chat import system, user
+from xai_sdk.chat import system
 
 def main():
     if len(sys.argv) < 2:
@@ -19,7 +19,6 @@ def main():
     client = Client()
 
     print(f"Uploading {file_path} to xAI Files API...")
-    # Upload the JSON file to xAI's file storage
     uploaded_file = client.files.upload(file_path)
     file_id = uploaded_file.id
     print(f"File uploaded successfully. Assigned File ID: {file_id}")
@@ -30,7 +29,7 @@ def main():
 
     system_prompt_text = """
 You are a community manager analyzing a Discord chat log for Age of Mythology: Retold. 
-Review the uploaded chat log in JSON format and produce a markdown-formatted report.
+Review the attached chat log in JSON format and produce a markdown-formatted report.
 
 REQUIREMENTS:
 1. Extract the key insights regarding game balance.
@@ -40,26 +39,24 @@ REQUIREMENTS:
 """
 
     try:
-        print("Sending chat request referencing file_id to xAI API...")
+        print("Sending chat request with attached file_id to xAI API...")
 
-        # Initialize chat with system instructions
         chat = client.chat.create(
             model="grok-4.5",
             messages=[system(system_prompt_text)]
         )
         
-        # Attach the uploaded file ID to the user prompt message
-        chat.append(user(
-            "Please analyze the attached raw Discord chat export JSON file.", 
-            file_ids=[file_id]
-        ))
+        # Pass a raw dictionary to chat.append to include file_ids
+        chat.append({
+            "role": "user",
+            "content": "Analyze the attached raw Discord chat export JSON file.",
+            "file_ids": [file_id]
+        })
         
-        # Sample response from model
         response = chat.sample()
         llm_output = response.content
 
     finally:
-        # Clean up remote file storage after completion
         print(f"Cleaning up remote file {file_id} from xAI storage...")
         try:
             client.files.delete(file_id)
