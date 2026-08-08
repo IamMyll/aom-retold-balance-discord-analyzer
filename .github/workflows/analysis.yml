@@ -31,6 +31,9 @@ jobs:
           # Run the official Docker container and mount the workspace to output the file
           docker run --rm -v ${{ github.workspace }}:/out tyrrrz/discordchatexporter export -t "$DISCORD_TOKEN" -c "$CHANNEL_ID" -f Json --after "2026-06-25 00:00" -o /out/chat_export.json
 
+      - name: Fix Workspace Permissions
+        run: sudo chown -R $USER:$USER ${{ github.workspace }}
+
       - name: Run AI Analysis
         env:
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }} 
