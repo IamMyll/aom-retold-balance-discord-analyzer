@@ -35,7 +35,7 @@ jobs:
 
       - name: Run AI Analysis
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} 
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }} 
         run: python analyze_and_publish.py chat_export.json
 
       - name: Commit and Push New Report
