@@ -28,11 +28,8 @@ jobs:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
         run: |
-          AFTER_DATE=2026-06-25 00:00
-          echo "Fetching logs after: $AFTER_DATE"
-          
           # Run the official Docker container and mount the workspace to output the file
-          docker run --rm -v ${{ github.workspace }}:/out tyrrrz/discordchatexporter export -t "$DISCORD_TOKEN" -c "$CHANNEL_ID" -f Json --after "$AFTER_DATE" -o /out/chat_export.json
+          docker run --rm -v ${{ github.workspace }}:/out tyrrrz/discordchatexporter export -t "$DISCORD_TOKEN" -c "$CHANNEL_ID" -f Json --after "2026-06-25 00:00" -o /out/chat_export.json
 
       - name: Run AI Analysis
         env:
