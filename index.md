@@ -4,27 +4,26 @@ title: "Latest Balance Report"
 permalink: /
 ---
 
-**Last Updated:** August 08, 2026 at 11:53 AM EDT
+**Last Updated:** August 08, 2026 at 09:45 PM EDT
 
 ---
 
 ### Insights into Game Balance
 
-* **Egyptian Civ Performance & Economy Challenges:** The community, including **Avely**, **Teddabear**, and **Rank Donator**, notes that Egyptian civilizations are currently struggling due to population efficiency issues, power creep, and the impact of the fortifications patch. **Teddabear** points out that Egypt's health-to-cost ratio falls short against modern AoE mechanics, and **Rank Donator** adds that heavy monument investments break the early tempo needed to win. **Avely** further critiques Egyptian human units (like slingers and camel riders) and expensive, pure-gold-cost priests, noting that camels underperform against cavalry like Hippeus and Jarls in certain matchups.
-* **Myth Unit Power and Special Abilities:** Players like **Ironhide**, **RecoN**, and **v2s28** discuss the overwhelming utility of certain myth units, specifically highlighting the AoE and special abilities of units like the Qinglong and Raiju. **Ironhide** points out that 3 Raijus can instantly wipe out groups of villagers with manual specials without a proper notification warning, which feels overly oppressive in team games. **v2s28** also flags that simultaneous special attacks from multiple Raijus bypass intended limitations.
-* **Aztec Faction Balance:** **GoodGameEveryone**, **Andrakla**, and **Bambam** discuss the strength of Aztec units and minors. While **Andrakla** and **GoodGameEveryone** view certain Aztec kits as top-tier (with **GoodGameEveryone** calling out warrior priests and specific unit scaling), **Bambam** feels that elements like the Jaguar Rider's timing and the favor-bursting mechanics can feel disproportionately strong.
-* **Greek Flexibility and General Balance:** **Kiber** and **Illuminatio imperii** observe that the overall balance state is in a healthy place with diverse god picks in high-level tournaments like the Athens qualifiers. However, **GoodGameEveryone** feels that Greek gods like Hades received unnecessary nerfs, leaving Zeus and Poseidon as the primary viable options.
+* **Egyptian Faction Viability & Unit Design:** Players like **Avely**, **Teddabear**, and **Hon3y** express concern over Egypt's current state in the meta. Avely highlights issues with low barracks health (making armies vulnerable to god powers), the high individual cost of upgrading unit lines, and the difficulty of dealing with Myth Units (MUs) without heavy investments in fragile, gold-heavy priests. Hon3y adds that camel riders feel underwhelming for their cost and pop requirements, while major myth units like scarabs remain the only reliable counters. **Rank Donator** further notes that Egypt was left behind as DLC civilizations and catch-up buffs introduced stronger elite units, though Set and Isis still see tournament play.
+* **Priest Balance & Utility:** The community is divided on the role of Egyptian priests. While **Automaton** and **Hon3y** point out their utility as healers, **Kido** and **Avely** argue that costing pure gold and lacking sufficient combat power make them a brutal requirement solely to counter Myth Units. Later in the log, **Boit** notes a design flaw where players feel forced to spam 5+ priests for healing regardless of whether MUs are present on the map, suggesting their utility is overly compressed into a single unit.
+* **Myth Units and Late-Game Power Creep:** Several participants, including **Teddabear**, **Ironhide**, and **RecoN**, discuss the overwhelming strength of certain late-game or DLC Myth Units—specifically the Qinglong, Raiju, and Onmoraki—due to their high range, AoE damage against villagers, and utility. **Ironhide** points out that units with AoE special attacks can wipe out villagers in seconds with very little counterplay time, leading to frustrations in team games and 1v1s alike. 
+* **General Meta Health:** Pro players like **_kiber** maintain a more optimistic perspective, noting that the overall game balance is in one of its best states since release, with wide civ/god representation in high-level tournaments like the Athens qualifiers, and very few truly impossible matchups.
 
 ### Recommended Balance Changes
 
-* **Egyptian Adjustments:**
-  * Lower monument costs or revert previous monument nerfs to help Egyptian players secure necessary favor without sacrificing early-game military tempo.
-  * Adjust priest costs to include wood instead of relying entirely on a pure gold sink, or improve their anti-myth utility to make them more cost-effective.
-  * Review camel rider stats and counters to ensure they fulfill their intended role against cavalry more reliably.
-* **Myth Unit and Special Ability Tweaks:**
-  * Implement a damage multiplier reduction for myth unit special abilities (such as the Raiju and Qinglong) against villagers, as suggested by **Ironhide**, to prevent instant wipe-outs without warning.
-  * Fix the targeting or hit-box mechanics for units like Raijus so that simultaneous ability stacking behaves as intended.
-  * Address the range and stats of flying myth units (e.g., aligning Qinglong and Onmoraki ranges more closely with other air units like the Phoenix, as recommended by **Teddabear**).
-* **Aztec and General Unit Balancing:**
-  * Review the timing and stat scaling of the Jaguar Rider to ensure it doesn't overly dominate the Heroic age.
-  * Re-evaluate hero and unit interactions, such as warrior priest damage scaling against air units and myth targets.
+* **Egyptian Priest Adjustments:** 
+  * Reduce the gold dependency of priests by shifting a portion of their cost to wood (e.g., 50 wood / 50 gold as suggested by **Kido**), or adjust their population cost and training economics.
+  * Rebalance the power budget by lowering passive healing effectiveness while improving their baseline anti-Myth Unit damage profile, reducing the need to mass-produce 5+ purely for support.
+* **Egyptian Human Military Tweaks:** 
+  * Re-evaluate the health/cost ratios of Egyptian barracks units (like Spearmen and Chariot Archers) to prevent them from being instantly wiped out by opposing area-of-effect god powers and elite cavalry lines.
+* **Myth Unit AoE & Utility Rebalancing:** 
+  * Apply a reduced damage multiplier for Myth Unit special abilities against villagers (as proposed by **Ironhide**) to mitigate sudden, unreactable villager wipes from units like Raiju and Qinglong.
+  * Review the range and utility stats of DLC myth units (such as Qinglong and Onmoraki) to bring them more in line with baseline legacy units like the Phoenix.
+* **Atlantean & Hero Mechanics:** 
+  * Re-examine Atlantean hero accessibility and population cost efficiencies, as discussed by **Teddabear**, to ensure they don't over-centralize the human-myth-hero balance triangle.
