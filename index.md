@@ -4,26 +4,20 @@ title: "Latest Balance Report"
 permalink: /
 ---
 
-**Last Updated:** August 08, 2026 at 09:45 PM EDT
+**Last Updated:** August 10, 2026 at 09:45 PM EDT
 
 ---
 
 ### Insights into Game Balance
 
-* **Egyptian Faction Viability & Unit Design:** Players like **Avely**, **Teddabear**, and **Hon3y** express concern over Egypt's current state in the meta. Avely highlights issues with low barracks health (making armies vulnerable to god powers), the high individual cost of upgrading unit lines, and the difficulty of dealing with Myth Units (MUs) without heavy investments in fragile, gold-heavy priests. Hon3y adds that camel riders feel underwhelming for their cost and pop requirements, while major myth units like scarabs remain the only reliable counters. **Rank Donator** further notes that Egypt was left behind as DLC civilizations and catch-up buffs introduced stronger elite units, though Set and Isis still see tournament play.
-* **Priest Balance & Utility:** The community is divided on the role of Egyptian priests. While **Automaton** and **Hon3y** point out their utility as healers, **Kido** and **Avely** argue that costing pure gold and lacking sufficient combat power make them a brutal requirement solely to counter Myth Units. Later in the log, **Boit** notes a design flaw where players feel forced to spam 5+ priests for healing regardless of whether MUs are present on the map, suggesting their utility is overly compressed into a single unit.
-* **Myth Units and Late-Game Power Creep:** Several participants, including **Teddabear**, **Ironhide**, and **RecoN**, discuss the overwhelming strength of certain late-game or DLC Myth Units—specifically the Qinglong, Raiju, and Onmoraki—due to their high range, AoE damage against villagers, and utility. **Ironhide** points out that units with AoE special attacks can wipe out villagers in seconds with very little counterplay time, leading to frustrations in team games and 1v1s alike. 
-* **General Meta Health:** Pro players like **_kiber** maintain a more optimistic perspective, noting that the overall game balance is in one of its best states since release, with wide civ/god representation in high-level tournaments like the Athens qualifiers, and very few truly impossible matchups.
+* **Egyptian Priest and Eco Power Budgets:** The balance of the Egyptian civilization received significant scrutiny regarding their economic and military architecture. **hon3ynuts**, **.teddabear**, and **Kido** discussed resource gathering rates and the heavy gold reliance of Priests. **Boit** and **nameschonvergeben** debated the priest's multifaceted utility (acting as scouts, healers, and anti-myth units), with **Boit** arguing that building 5+ priests regardless of enemy Myth Units points to an over-tuned power budget, whereas **nameschonvergeben** contended that nerfing their healing would disproportionately penalize the civilization against early rushes. **Linger** and **korsar_sfx** added that Priest healing feels slow compared to alternatives like Mikos.
+* **Mythic Flying Units and Qinglong Dominance:** A major point of contention centers on Mythic flying units, specifically the Chinese Qinglong and Onmoraki, as highlighted by **RecoN**, **NeymarMD**, **BigStimulus**, and **.teddabear**. Players argued that Qinglongs possess excessive power budgets due to their wood-only cost, high hit points, and massive 12-tile range, allowing them to snipe resources and retreat over obstacles with minimal risk. **v2s28** and **Ironhide** further pointed out that AOE special abilities from units like Raijus and Qinglongs can delete entire villager lines instantly without adequate warning or map readability in team games.
+* **Aztec Favour and Special Abilities:** Discussions touching upon Aztec mechanics led **illuminatioimperi** to note that their favor generation and late-game favor bursting can eliminate 10–20 villagers too quickly. Additionally, **illuminatioimperi** pointed out that the Armadillo special ability can push heroes—a unique trait denied even to Titans.
+* **The "Get Good" Philosophy vs. Balance Realities:** A recurring philosophical debate spearheaded by **Boit**, **cajocu**, and **Mathilde Moksha** asserted that personal gameplay errors and sub-optimal god paths are the primary culprits in losses, famously summarized by **Boit** that the answer to unfavorable matchups lies "inward." While **macdoom_** and **GoodGameEveryone** pushed back against this by emphasizing that certain units (like Centaurs or Qinglongs) and rigid faction imbalances heavily skew win conditions, **Mathilde Moksha** bridged the gap by noting that even if "getting good" is technically correct, a truly accessible game needs a healthy baseline balance to keep the community thriving.
 
 ### Recommended Balance Changes
 
-* **Egyptian Priest Adjustments:** 
-  * Reduce the gold dependency of priests by shifting a portion of their cost to wood (e.g., 50 wood / 50 gold as suggested by **Kido**), or adjust their population cost and training economics.
-  * Rebalance the power budget by lowering passive healing effectiveness while improving their baseline anti-Myth Unit damage profile, reducing the need to mass-produce 5+ purely for support.
-* **Egyptian Human Military Tweaks:** 
-  * Re-evaluate the health/cost ratios of Egyptian barracks units (like Spearmen and Chariot Archers) to prevent them from being instantly wiped out by opposing area-of-effect god powers and elite cavalry lines.
-* **Myth Unit AoE & Utility Rebalancing:** 
-  * Apply a reduced damage multiplier for Myth Unit special abilities against villagers (as proposed by **Ironhide**) to mitigate sudden, unreactable villager wipes from units like Raiju and Qinglong.
-  * Review the range and utility stats of DLC myth units (such as Qinglong and Onmoraki) to bring them more in line with baseline legacy units like the Phoenix.
-* **Atlantean & Hero Mechanics:** 
-  * Re-examine Atlantean hero accessibility and population cost efficiencies, as discussed by **Teddabear**, to ensure they don't over-centralize the human-myth-hero balance triangle.
+* **Qinglong and Flying Myth Unit Adjustments:** Reduce the attack range of the Qinglong and Onmoraki down to a baseline of 6 tiles to prevent oppressive out-ranging. Alternatively, introduce a gold cost or food requirement to match other high-tier myth units like the Phoenix.
+* **Egyptian Priest Rework:** Shift a portion of the Egyptian Priest's power budget away from universal healing and into targeted anti-myth capabilities, or introduce a mixed resource cost (such as wood alongside gold) to alleviate early-game economic strain.
+* **Myth Unit Area-of-Effect / Ability Buffs & Fixes:** Address unintended mechanics, such as ensuring multiple Raiju special abilities cannot instantly stack and wipe units simultaneously, and review Armadillo displacement mechanics against heroes.
+* **Centaur Volley Fine-Tuning:** Review Centaur mechanics to ensure their ranged volley utility does not dominate early-game 1v1 pacing unchecked against non-cavalry compositions.
