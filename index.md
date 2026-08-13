@@ -4,20 +4,36 @@ title: "Latest Balance Report"
 permalink: /
 ---
 
-**Last Updated:** August 10, 2026 at 09:45 PM EDT
+**Last Updated:** August 12, 2026 at 09:58 PM EDT
 
 ---
 
+# Age of Mythology: Retold Community Balance Report
+
 ### Insights into Game Balance
 
-* **Egyptian Priest and Eco Power Budgets:** The balance of the Egyptian civilization received significant scrutiny regarding their economic and military architecture. **hon3ynuts**, **.teddabear**, and **Kido** discussed resource gathering rates and the heavy gold reliance of Priests. **Boit** and **nameschonvergeben** debated the priest's multifaceted utility (acting as scouts, healers, and anti-myth units), with **Boit** arguing that building 5+ priests regardless of enemy Myth Units points to an over-tuned power budget, whereas **nameschonvergeben** contended that nerfing their healing would disproportionately penalize the civilization against early rushes. **Linger** and **korsar_sfx** added that Priest healing feels slow compared to alternatives like Mikos.
-* **Mythic Flying Units and Qinglong Dominance:** A major point of contention centers on Mythic flying units, specifically the Chinese Qinglong and Onmoraki, as highlighted by **RecoN**, **NeymarMD**, **BigStimulus**, and **.teddabear**. Players argued that Qinglongs possess excessive power budgets due to their wood-only cost, high hit points, and massive 12-tile range, allowing them to snipe resources and retreat over obstacles with minimal risk. **v2s28** and **Ironhide** further pointed out that AOE special abilities from units like Raijus and Qinglongs can delete entire villager lines instantly without adequate warning or map readability in team games.
-* **Aztec Favour and Special Abilities:** Discussions touching upon Aztec mechanics led **illuminatioimperi** to note that their favor generation and late-game favor bursting can eliminate 10–20 villagers too quickly. Additionally, **illuminatioimperi** pointed out that the Armadillo special ability can push heroes—a unique trait denied even to Titans.
-* **The "Get Good" Philosophy vs. Balance Realities:** A recurring philosophical debate spearheaded by **Boit**, **cajocu**, and **Mathilde Moksha** asserted that personal gameplay errors and sub-optimal god paths are the primary culprits in losses, famously summarized by **Boit** that the answer to unfavorable matchups lies "inward." While **macdoom_** and **GoodGameEveryone** pushed back against this by emphasizing that certain units (like Centaurs or Qinglongs) and rigid faction imbalances heavily skew win conditions, **Mathilde Moksha** bridged the gap by noting that even if "getting good" is technically correct, a truly accessible game needs a healthy baseline balance to keep the community thriving.
+*   **Underhanded Tactics & Map Control:** Exploring remote map corners for sneaky Village Centers (VCs) under Oranos works well short-term as noted by **AutomaticMoksha**, though **Bambam** warns that higher-tier players quickly adapt by scouting weird spots. 
+*   **General Balance Sentiment:** Several players, including **Illuminatio imperii**, feel the current patch provides some of the best overall balance since the game's release—aside from underperforming Egyptian (Eggy) and Loki civilisations. Meanwhile, **GoodGameEveryone** believes Hades was unnecessarily overnerfed, leaving only Zeus and Poseidon as viable Greek choices (with Demeter acting as a "challenge mode").
+*   **Aztec Dominance and Problematic Units:** Aztecs draw heavy discussion due to their strong mechanics. **Illuminatio imperii** and **AutomaticMoksha** point out that their favor burst, Jaguar Riders beating hard counters, and Armadillos pushing heroes make them feel oppressive. **GoodGameEveryone** and **Teddabear** also criticize Warrior Priests and Tzitzimitl upgrade cost reductions (75% being "free favor/upgrades").
+*   **The Chinese Myth Unit Debate:** Late-game flying Myth Units—specifically the Qinglong—spark intense controversy. **RecoN**, **NeymarMD**, **BigStimulus**, and **Ironhide** argue that Qinglongs lack proper counterplay due to high health, extreme range (12), wood-only costs, and the ability to kite over obstacles and terrain. Conversely, **boit**, **v2s28**, and **Kido** defend them, noting that heroes and proper positioning/split micro can handle them, and comparing them to older dominant units like Centaurs.
+*   **Egyptian Civilisation Challenges:** Egyptian priests face heavy scrutiny. **boit** argues that their power budget is overly allocated to healing rather than utility or combat against Myth Units. **Kido** suggests changing priests to cost wood alongside gold because Egyptians are constantly strapped for gold.
 
 ### Recommended Balance Changes
 
-* **Qinglong and Flying Myth Unit Adjustments:** Reduce the attack range of the Qinglong and Onmoraki down to a baseline of 6 tiles to prevent oppressive out-ranging. Alternatively, introduce a gold cost or food requirement to match other high-tier myth units like the Phoenix.
-* **Egyptian Priest Rework:** Shift a portion of the Egyptian Priest's power budget away from universal healing and into targeted anti-myth capabilities, or introduce a mixed resource cost (such as wood alongside gold) to alleviate early-game economic strain.
-* **Myth Unit Area-of-Effect / Ability Buffs & Fixes:** Address unintended mechanics, such as ensuring multiple Raiju special abilities cannot instantly stack and wipe units simultaneously, and review Armadillo displacement mechanics against heroes.
-* **Centaur Volley Fine-Tuning:** Review Centaur mechanics to ensure their ranged volley utility does not dominate early-game 1v1 pacing unchecked against non-cavalry compositions.
+*   **Aztec Nerfs:**
+    *   Add a cooldown to the Aztec favor burst ability to prevent late-game villager massacres.
+    *   Remove the ability for Armadillos to push heroes with their special attack.
+    *   Nerf Jaguar Rider training time and adjust their availability in Heroic age or apply a stat penalty.
+    *   Reduce the Tzitzimitl upgrade cost reduction from 75% to a more balanced 35-45%.
+    *   Reduce the Aztec Warrior Priest's anti-air capabilities.
+
+*   **Chinese Myth Unit Adjustments:**
+    *   Reduce the range of flying Myth Units like the Qinglong down to a more manageable level (e.g., range 6, matching suggestions by **Teddabear**).
+    *   Rebalance Qinglong costs to include gold or food rather than being exclusively massed via wood.
+
+*   **Egyptian Balance Tweaks:**
+    *   Shift some of the Egyptian Priest's power budget from passive healing to anti-Myth Unit damage, as suggested by **boit**.
+    *   Modify priest training costs to incorporate wood instead of requiring pure gold.
+
+*   **General Mechanics Adjustments:**
+    *   Fix the bug where multiple Raijus can synchronize their special ability to instantly wipe out villager groups without warning.
