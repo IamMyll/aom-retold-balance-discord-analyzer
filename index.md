@@ -4,19 +4,32 @@ title: "Latest Balance Report"
 permalink: /
 ---
 
-**Last Updated:** August 16, 2026 at 09:15 PM EDT
+**Last Updated:** August 18, 2026 at 09:13 PM EDT
 
 ---
 
 ### Insights into Game Balance
 
-* **China's Favor Economy and Myth Units:** Players noted significant imbalances regarding China's economy. **Kvoth** and **Illuminatio imperii** pointed out that China suffers from a lack of early-game favor, limiting classical myth unit play, but generates an overwhelming surplus in the late game. **NeymarMD**, **RecoN**, and **nameschonvergeben** heavily criticized the *Qinglong* myth unit, highlighting that its wood-only cost, extreme range, flying capabilities, and 720 HP with 45% pierce armor make it nearly impossible to counter play effectively or focus down. **Smoke** and **Carnage** further discussed how the *Kuafu* mechanic dominates early favor spending, leading to inflexible, burst-scaling economic patterns.
-* **Aztec Strategies & Blood Pact Mechanics:** Discussions led by **rankdonator**, **Bambam**, and **AutomaticMoksha** dissected Aztec opening strategies, specifically fast 2 Town Center (2TC) builds utilizing *Blood Pact* and early game warrior priest aggression. **rankdonator** and **Ironhide** flagged the *Armadillo* and *Blood Pact* interactions as frustrating and overtuned, arguing that they lack interactive counterplay when executed efficiently.
-* **General Faction & Mechanic Feedback:** **Teddabear** and **rankdonator** discussed Egyptian balance, noting that Egyptian myth units and monument costs feel underwhelming compared to newer civilizations, with monument pay-off times being too slow for standard 1v1 matches. 
+* **Aztec Economy, Rushing, and 1TC Meta:** Players like **Bambam** and **AutomaticMoksha 💖✨🪡** discussed how Aztec design leans toward heavy 1TC (Town Center) early aggression and timing pushes rather than greedy 2TC plays. **Bambam** pointed out that Aztec players can force 1TC matches via aggressive early warrior priest moves, though doing so carries an eco "Calpuli tax" of roughly 200 resources by the 10-minute mark compared to standard macro builds. **Rank Donator** noted that Huitzilopochtli allows for exceptionally fast Classical age times and rapid TC completions around the 3:40 mark utilizing Blood Pact mechanics.
+* **The "Blood Pact" and Armadillo Debate:** The Blood Pact mechanic and Armadillos drew substantial criticism. **Rank Donator** and **Ironhide** expressed frustration that Blood Pact combined with Armadillos feels oppressive and "unfun," effectively enabling unstoppable 2TC timings and rapid enemy TC destruction. **Nameschonvergeben** and **Einherjb** analyzed that while Blood Pact's build rate and gather rates can snowball resource advantage significantly, improper micro with multiple villagers during construction can severely penalize the intended boost.
+* **Chinese Favor and Myth Unit Design:** **GoodGameEveryone**, **_kiber**, and **Carnage** shared grievances regarding Chinese favor generation and structural balance, comparing it unfavorably to other factions. **_kiber** and **Carnage** highlighted that Kuafus absorb early-game favor so heavily that it restricts strategic flexibility in Classical and Heroic ages, forcing an "auto-queue" style of play instead of meaningful choices between eco upgrades and myth units. 
+* **Ocelotl vs. Murmillo Matchup Viability:** **Bambam**, **motaba**, and **Einherjb** debated the viability of Ocelotls against Atlantean Murmillos. While **motaba** argued that Ocelotls trade favorably into Murmillos on equal pop, **Bambam** expressed frustration that relying on Ocelotl medium-tier upgrades and ambush mechanics often falls flat in real matches without flawless positioning, leading to unfavorable trades against standard Atlantean infantry compositions.
+* **General Pathing and Quality of Life Grievances:** Across multiple discussions, players such as **Kido**, **Rank Donator**, and **RecoN** voiced heavy complaints about game-breaking pathing bugs. Issues involving villagers getting permanently stuck on drop sites, herdables getting trapped, and units arbitrarily prioritizing wall segments over enemy armies during attack-move commands have heavily degraded competitive integrity ahead of upcoming tournaments.
 
 ### Recommended Balance Changes
 
-* **Qinglong Rebalance:** Adjust the *Qinglong* myth unit by reducing its out-range capabilities, increasing its resource costs beyond strictly wood, or toning down its hit points and pierce armor to allow adequate counterplay.
-* **China Favor and Kuafu Adjustments:** Rework China's favor generation curve to provide more steady generation in the early game while curbing the late-game surplus. Adjust *Kuafu* costs so they do not completely monopolize early favor utilization.
-* **Aztec Blood Pact & Armadillo Tweaks:** Nerf the *Blood Pact* synergy with early TC construction and the *Armadillo* unit to reduce oppressive, uninteractive opening timings. 
-* **Egyptian Monument Cost Reductions:** Lower the resource cost of Egyptian monuments to make building 3+ monuments viable and improve early/mid-game favor pacing for the civilization.
+* **Aztec / Blood Pact Adjustments:**
+  * Adjust Blood Pact building rates and prevent sacrificed villagers from being leveraged into unfair multi-tasking exploits that guarantee uncontested early 2TC expansions.
+  * Reduce the raw effectiveness and health scaling of early-game non-heroic units like the Armadillo to prevent them from outperforming traditional siege units like Behemoths.
+  * Reevaluate Quinametzin or obsidian shard generation rates under Tez to curb overwhelming favor-backed pressure.
+
+* **Chinese Favor & Myth Unit Reworks:**
+  * Rebalance Kuafu favor costs or decouple them from heavy early-game favor generation to restore strategic choice between economy scaling and myth unit production in the Classical and Heroic ages.
+  * Adjust myth unit costs in the late game so that players retain enough favor for essential technologies and god powers rather than mindlessly spamming dragons.
+
+* **Ocelotl & Ambush Mechanics:**
+  * Refine the consistency of the Ocelotl's ambush and jump mechanics to ensure the base range and trigger activation operate predictably during engagement micro.
+
+* **Engine & Pathing Bug Fixes:**
+  * Fix pathing collisions involving neutral entities (such as map elephants) that cause villagers and armies to permanently idle or break movement commands.
+  * Resolve attack-move targeting logic so units do not continuously prioritize arbitrary wall segments over active combat threats.
