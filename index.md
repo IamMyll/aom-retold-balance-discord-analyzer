@@ -4,32 +4,25 @@ title: "Latest Balance Report"
 permalink: /
 ---
 
-**Last Updated:** August 18, 2026 at 09:13 PM EDT
+**Last Updated:** August 20, 2026 at 09:17 PM EDT
 
 ---
 
 ### Insights into Game Balance
 
-* **Aztec Economy, Rushing, and 1TC Meta:** Players like **Bambam** and **AutomaticMoksha 💖✨🪡** discussed how Aztec design leans toward heavy 1TC (Town Center) early aggression and timing pushes rather than greedy 2TC plays. **Bambam** pointed out that Aztec players can force 1TC matches via aggressive early warrior priest moves, though doing so carries an eco "Calpuli tax" of roughly 200 resources by the 10-minute mark compared to standard macro builds. **Rank Donator** noted that Huitzilopochtli allows for exceptionally fast Classical age times and rapid TC completions around the 3:40 mark utilizing Blood Pact mechanics.
-* **The "Blood Pact" and Armadillo Debate:** The Blood Pact mechanic and Armadillos drew substantial criticism. **Rank Donator** and **Ironhide** expressed frustration that Blood Pact combined with Armadillos feels oppressive and "unfun," effectively enabling unstoppable 2TC timings and rapid enemy TC destruction. **Nameschonvergeben** and **Einherjb** analyzed that while Blood Pact's build rate and gather rates can snowball resource advantage significantly, improper micro with multiple villagers during construction can severely penalize the intended boost.
-* **Chinese Favor and Myth Unit Design:** **GoodGameEveryone**, **_kiber**, and **Carnage** shared grievances regarding Chinese favor generation and structural balance, comparing it unfavorably to other factions. **_kiber** and **Carnage** highlighted that Kuafus absorb early-game favor so heavily that it restricts strategic flexibility in Classical and Heroic ages, forcing an "auto-queue" style of play instead of meaningful choices between eco upgrades and myth units. 
-* **Ocelotl vs. Murmillo Matchup Viability:** **Bambam**, **motaba**, and **Einherjb** debated the viability of Ocelotls against Atlantean Murmillos. While **motaba** argued that Ocelotls trade favorably into Murmillos on equal pop, **Bambam** expressed frustration that relying on Ocelotl medium-tier upgrades and ambush mechanics often falls flat in real matches without flawless positioning, leading to unfavorable trades against standard Atlantean infantry compositions.
-* **General Pathing and Quality of Life Grievances:** Across multiple discussions, players such as **Kido**, **Rank Donator**, and **RecoN** voiced heavy complaints about game-breaking pathing bugs. Issues involving villagers getting permanently stuck on drop sites, herdables getting trapped, and units arbitrarily prioritizing wall segments over enemy armies during attack-move commands have heavily degraded competitive integrity ahead of upcoming tournaments.
+* **Aztec and Chinese Balance Discontent:** Players like **goodgameeveryone3915** and **Korsar_sfx** voice heavy frustrations regarding the balancing of Aztec and Chinese civilizations, citing issues with high-performing units such as the Aztec Warrior Priest and Armadillo, which they feel outperform traditional units or function too effectively as frontline fighters.
+* **Chinese Favor and Economic Scaling:** **_kiber**, **smogonsmoke**, and **carnage_rts** discuss the state of Chinese favor generation, noting that the shift from favor cost to build time on units like the Kuafu alters macro pacing. **_kiber** points out that cheaper early Kuafus hurt classical myth unit plays, while late-game favor spikes into overwhelming dragon spam. 
+* **Ocelotl vs. Murmillo Matchups:** **Bambam**, **motaba**, and **Einherjb** debate the performance of Aztec Ocelotl against Atlantean Murmillos. While **motaba** finds Ocelotl trading favorably on paper, **Bambam** highlights practical inconsistencies with the tree-ambush mechanic and pathing in actual ranked games.
+* **Pathing and Technical Bugs Affecting Gameplay:** **Kido19**, **TheMista**, and **rankdonator** note that current pathing issues—specifically attack-move bugs causing units to ignore targets or march through enemies, and herdables/villagers getting permanently stuck on neutral map entities like elephants—are severely impacting competitive integrity leading up to tournaments.
 
 ### Recommended Balance Changes
 
-* **Aztec / Blood Pact Adjustments:**
-  * Adjust Blood Pact building rates and prevent sacrificed villagers from being leveraged into unfair multi-tasking exploits that guarantee uncontested early 2TC expansions.
-  * Reduce the raw effectiveness and health scaling of early-game non-heroic units like the Armadillo to prevent them from outperforming traditional siege units like Behemoths.
-  * Reevaluate Quinametzin or obsidian shard generation rates under Tez to curb overwhelming favor-backed pressure.
-
-* **Chinese Favor & Myth Unit Reworks:**
-  * Rebalance Kuafu favor costs or decouple them from heavy early-game favor generation to restore strategic choice between economy scaling and myth unit production in the Classical and Heroic ages.
-  * Adjust myth unit costs in the late game so that players retain enough favor for essential technologies and god powers rather than mindlessly spamming dragons.
-
-* **Ocelotl & Ambush Mechanics:**
-  * Refine the consistency of the Ocelotl's ambush and jump mechanics to ensure the base range and trigger activation operate predictably during engagement micro.
-
-* **Engine & Pathing Bug Fixes:**
-  * Fix pathing collisions involving neutral entities (such as map elephants) that cause villagers and armies to permanently idle or break movement commands.
-  * Resolve attack-move targeting logic so units do not continuously prioritize arbitrary wall segments over active combat threats.
+* **Aztec Unit Tweaks:**
+  * Revert or reduce Warrior Priest HP down to 90–100 to prevent them from acting as durable frontline units during the Classical Age.
+  * Adjust the Armadillo's overall utility to bring its siege capabilities closer in line with other comparable myth units like the Behemoth.
+  * Tweak the Quinametzin or reduce Obsidian Shard spawns/favor output to balance Aztec high favor generation loops.
+* **Chinese Favor and Economy Adjustments:**
+  * Rework the favor generation curve for Chinese civilizations by increasing early-game favor accessibility for more flexible strategies while scaling back excessive late-game favor accumulation.
+* **Bug Fixes and Quality of Life:**
+  * Prioritize hotfixes for the attack-move command bug to prevent units from walking past targets or prioritizing wall segments incorrectly.
+  * Resolve collision detection issues around neutral map wildlife (such as elephants) that cause villagers and herdables to lock up and idle indefinitely.
